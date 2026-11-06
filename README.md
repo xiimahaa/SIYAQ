@@ -11,8 +11,8 @@ The models are evaluated on the overall test set and on challenging linguistic s
 
 ## 📁 Repository Contents
 
-- `SIYAQFINAL.ipynb` — Complete implementation and evaluation
-- `sentiment+labelled+sentences.zip` — Dataset used in the project
+- `SIYAQFINAL.ipynb` - Complete implementation and evaluation
+- `sentiment+labelled+sentences.zip` - Dataset used in the project
 
 ---
 
