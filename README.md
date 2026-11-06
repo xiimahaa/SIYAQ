@@ -1,90 +1,58 @@
-# SIYAQ: Sentiment Analysis 📝
+# SIYAQ: Sentiment Analysis and Primary Challenge Investigation
 
-## 📌 Overview
-
-This project implements and compares two approaches for **binary sentiment classification** of text reviews:
+This project investigates sentiment classification using two different approaches:
 
 - **TF-IDF + Logistic Regression**
 - **all-MiniLM-L6-v2 Sentence Embeddings + Logistic Regression**
 
-The goal is to classify reviews as **Positive** or **Negative** and compare the performance of both approaches.
+The project also analyzes challenging linguistic patterns, including **negation** and **contrastive language**.
 
 ---
 
-## 🔍 Primary Challenge: Contrastive Language
+## 📊 Results
 
-The main analysis focuses on reviews containing contrastive expressions such as:
+| Model / Evaluation | Accuracy | Macro F1 |
+|---|---:|---:|
+| TF-IDF + Logistic Regression | *Add your final result* | *Add your final result* |
+| MiniLM + Logistic Regression | **89.71%** | **89.69%** |
 
-- but
-- however
-- although
-- though
-- yet
+### Contrastive Language Analysis
 
-These expressions can be challenging because the sentiment may change within the same sentence.
+The MiniLM model was further evaluated on manually verified contrastive sentences:
 
-The project also includes **negation analysis** and an analysis of **misclassified examples**.
+- **Overall Test Accuracy:** 89.71%
+- **Contrastive Subset Accuracy:** 76.92%
+- **Contrastive Examples:** 39
+- **Correct Predictions:** 30
+- **Incorrect Predictions:** 9
 
----
-
-## 📊 Evaluation
-
-Both models are evaluated using:
-
-- **Accuracy**
-- **Macro F1 Score**
-
-The analysis includes:
-
-- Overall model performance
-- Contrastive language subset analysis
-- Negation analysis
-- Model comparison
-- Error analysis
+The results show that contrastive language is more challenging for the model than general sentiment classification.
 
 ---
 
-## 📂 Dataset
+## 🔍 Project Analysis
 
-The project uses the **Sentiment Labelled Sentences** dataset.
+The project investigates:
 
-Labels:
-
-- `0` → Negative
-- `1` → Positive
+- Overall sentiment classification performance
+- Negation as a linguistic challenge
+- Contrastive language patterns such as **but**, **however**, and **although**
+- Comparison between the two modeling approaches
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
 - Python
-- Pandas
 - Scikit-learn
 - Sentence Transformers
-- Logistic Regression
 - all-MiniLM-L6-v2
+- Pandas
+- NumPy
 
 ---
 
-## 🚀 How to Run
+## 📁 Files
 
-1. Download or clone this repository.
-2. Open `SIYAQFINAL.ipynb`.
-3. Run the notebook cells in order.
-
----
-
-## 📁 Project Structure
-
-```text
-SIYAQ/
-├── SIYAQFINAL.ipynb
-├── sentiment+labelled+sentences.zip
-└── README.md
-```
-
----
-
-## 👥 Team Project
-
-This project was developed as part of an **NLP course project** focused on sentiment analysis and challenging linguistic patterns.
+- `SIYAQFINAL.ipynb` — Complete implementation and evaluation
+- `sentiment+labelled+sentences.zip` — Dataset used in the project
